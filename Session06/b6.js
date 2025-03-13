@@ -13,5 +13,4 @@ const isArithmeticSequence = (arr) => {
 };
 
 console.log(isArithmeticSequence([2,4,6,8]));
-console.log(isArithmeticSequence([3,6,9,12,14]));
 console.log(isArithmeticSequence("abc"));
