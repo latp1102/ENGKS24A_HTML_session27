@@ -1,7 +1,7 @@
 let numbers = [];
 
 function nhapSoNguyen() {
-    let input = prompt("Nhập danh sách số nguyên, cách nhau bằng dấu phẩy:");
+    let input = prompt("Nhập danh sách số nguyên");
     numbers = input.split('').map(Number).filter(num => !isNaN(num));
 }
 
@@ -15,11 +15,12 @@ function tinhTrungBinh() {
 }
 
 function timSoLonNhat() {
-    if (numbers.length === 0) {
-        console.log("Danh sách trống.");
+    let maxNumbers = numbers.filter(num => num % 2 === 0); 
+    if (maxNumbers.length === 0) {
+        console.log("Không có số chẵn trong danh sách");
         return;
     }
-    console.log("Số lớn nhất là:", Math.max(...numbers));
+    console.log("Số chẵn lớn nhất là:", Math.max(...maxNumbers));
 }
 
 function timSoLeNhoNhat() {
