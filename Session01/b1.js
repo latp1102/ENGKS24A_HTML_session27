@@ -43,7 +43,7 @@ function check() {
             }
             console.log(result);
             
-        } else if (choice !== "5") {
+        } else if (choice !== 5) {
             console.log("Thoát chương trình");
             
         }
